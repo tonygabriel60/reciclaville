@@ -105,8 +105,8 @@
 ## 🚀 Como Testar
 
 1. Execute: `./mvnw spring-boot:run`
-2. Acesse: http://localhost:8081
-3. H2 Console: http://localhost:8081/h2-console
+2. Acesse: http://localhost:8080
+3. H2 Console: http://localhost:8080/h2-console
 4. Use os exemplos em `exemplos-teste.md`
 5. Login inicial: admin/admin
 

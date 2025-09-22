@@ -34,7 +34,7 @@ Sistema para controle de compensação de carbono desenvolvido com Spring Boot.
 
 1. Clone o repositório
 2. Execute: `./mvnw spring-boot:run`
-3. Acesse: http://localhost:8081
+3. Acesse: http://localhost:8080
 
 ## Usuário Padrão
 - **Usuário:** admin
@@ -84,7 +84,7 @@ Sistema para controle de compensação de carbono desenvolvido com Spring Boot.
 - `GET /api/dashboard` - Dados do dashboard (ADMIN: todos, USER: apenas seu cliente)
 
 ## Banco de Dados
-- H2 Console: http://localhost:8081/h2-console
+- H2 Console: http://localhost:8080/h2-console
 - URL: jdbc:h2:mem:testdb
 - Usuário: sa
 - Senha: password

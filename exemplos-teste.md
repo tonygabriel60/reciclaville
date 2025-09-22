@@ -2,7 +2,7 @@
 
 ## 1. Login (Obter Token)
 ```bash
-curl -X POST http://localhost:8081/api/auth/login \
+curl -X POST http://localhost:8080/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{
     "nomeUsuario": "admin",
@@ -12,7 +12,7 @@ curl -X POST http://localhost:8081/api/auth/login \
 
 ## 2. Criar Categoria Principal
 ```bash
-curl -X POST http://localhost:8081/api/categorias \
+curl -X POST http://localhost:8080/api/categorias \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI" \
   -d '{
@@ -23,7 +23,7 @@ curl -X POST http://localhost:8081/api/categorias \
 
 ## 3. Criar Subcategoria
 ```bash
-curl -X POST http://localhost:8081/api/categorias \
+curl -X POST http://localhost:8080/api/categorias \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI" \
   -d '{
@@ -35,7 +35,7 @@ curl -X POST http://localhost:8081/api/categorias \
 
 ## 4. Criar Material
 ```bash
-curl -X POST http://localhost:8081/api/materiais \
+curl -X POST http://localhost:8080/api/materiais \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI" \
   -d '{
@@ -47,7 +47,7 @@ curl -X POST http://localhost:8081/api/materiais \
 
 ## 5. Criar Cliente
 ```bash
-curl -X POST http://localhost:8081/api/clientes \
+curl -X POST http://localhost:8080/api/clientes \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI" \
   -d '{
@@ -60,7 +60,7 @@ curl -X POST http://localhost:8081/api/clientes \
 
 ## 6. Criar Usuário USER
 ```bash
-curl -X POST http://localhost:8081/api/usuarios \
+curl -X POST http://localhost:8080/api/usuarios \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI" \
   -d '{
@@ -74,7 +74,7 @@ curl -X POST http://localhost:8081/api/usuarios \
 
 ## 7. Criar Declaração
 ```bash
-curl -X POST http://localhost:8081/api/declaracoes \
+curl -X POST http://localhost:8080/api/declaracoes \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI" \
   -d '{
@@ -92,19 +92,19 @@ curl -X POST http://localhost:8081/api/declaracoes \
 
 ## 8. Consultar Dashboard
 ```bash
-curl -X GET http://localhost:8081/api/dashboard \
+curl -X GET http://localhost:8080/api/dashboard \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
 ## 9. Listar Categorias
 ```bash
-curl -X GET http://localhost:8081/api/categorias \
+curl -X GET http://localhost:8080/api/categorias \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
 ## 10. Listar Materiais por Categoria
 ```bash
-curl -X GET "http://localhost:8081/api/materiais?categoriaId=1" \
+curl -X GET "http://localhost:8080/api/materiais?categoriaId=1" \
   -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
