@@ -86,7 +86,7 @@ Sistema para controle de compensação de carbono desenvolvido com Spring Boot.
 ## Banco de Dados
 - H2 Console: http://localhost:8080/h2-console
 - URL: jdbc:h2:mem:testdb
-- Usuário: sa
+- Usuário: antonio
 - Senha: password
 
 ## Exemplos de Uso
